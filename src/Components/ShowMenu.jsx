@@ -10,7 +10,7 @@ const ShowMenu = ({ todo, showMenu, handleEdit, handleDelete, handleMenu }) => {
       />
       {
         showMenu === todo?.id && 
-          <div className="absolute -top-6 left-4 flex flex-col items-center gap-2 bg-gradient-to-r from-slate-300 to-slate-400 p-4 rounded-2xl shadow-2xl">
+          <div className="absolute -top-6 right-4 flex justify-center items-center gap-4 bg-gradient-to-r from-slate-300 to-slate-400 p-4 rounded-2xl shadow-2xl">
             <FaPen
               onClick={() => handleEdit(todo?.id)}
               className="fas fa-pen cursor-pointer hover:text-cyan-800"
